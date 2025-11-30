@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Web App - Module 5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Restaurant</h1>
+    </header>
+
+    <main>
+        <div class="tiles">
+            <div class="tile" id="menu-tile" onclick="loadMenuItems('Lunch')">Menu</div>
+            <div class="tile" id="specials-tile" onclick="loadRandomCategory()">Specials</div>
+            <div class="tile" id="map-tile" onclick="loadMap()">Map</div>
+        </div>
+
+        <section id="category-section">
+            <h2 id="category-title"></h2>
+            <ul id="category-items"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Restaurant</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
